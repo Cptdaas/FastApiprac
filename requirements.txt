@@ -1,0 +1,15 @@
+alembic
+azure-keyvault-secrets
+azure-identity
+coloredlogs
+fastapi
+numpy
+pandas
+pydantic
+pytest
+uvicorn
+scikit-learn
+sqlalchemy
+psycopg2
+pyodbc
+python-dotenv
