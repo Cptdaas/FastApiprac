@@ -20,5 +20,5 @@ def create(request: schemas.Blog,db: Session = Depends(get_db)):
     new_blog =model.Blog(title=request.title,body=request.body)
     db.add(new_blog)
     db.commit()
-    
-    return {'title':request}
+    db.refresh(new_blog)
+    return new_blog
